@@ -76,6 +76,9 @@ body{
     background: var(--basicColor);
     font-size: 25px;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .addButton:active{
     transform: scale(1.1);
@@ -117,3 +120,5 @@ body{
 .deleteIcon:hover{
     color: rgb(243, 0, 0);
 }
+
+
