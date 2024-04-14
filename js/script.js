@@ -1,8 +1,10 @@
 // ======= varibale part  ========
-let todoInput = document.querySelector('.todoInput')
-let addButton = document.querySelector('.addButton')
-let todoList  = document.querySelector('.todoList')
-let turn      = true
+let todoInput      = document.querySelector('.todoInput')
+let addButton      = document.querySelector('.addButton')
+let todoList       = document.querySelector('.todoList')
+let turn           = true
+let taskDoneNumber = document.querySelectorAll('.taskDoneNumber')
+let totalTaskNumber = document.querySelectorAll('.totalTaskNumber')
 // ============== functions part =============
 addButton.addEventListener('click' , ()=>{
     //========== condition part start
@@ -56,15 +58,6 @@ addButton.addEventListener('click' , ()=>{
             todoListInput.style = ' text-decoration: line-through ; font-style:italic; color: #71ff05'
             editButton.style  = 'display: none'
         })
-
-
-
-
-
-
-
-
-
 
      }
 
