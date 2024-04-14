@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+:root{
+    --basicColor : #71ff05; 
+    --ibm:"IBM Plex Sans", sans-serif;
+    --sendom:  "Sedan", serif;
+}
+
+body{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+}
+.task_plate{
+    width: 500px;
+    height: 200px;
+    border: 2px solid #B3B6B7  ;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task_plate h1{
+    font-size: 45px;
+    font-weight: 600;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.task_plate h1 .spanOne{
+    color: var(--basicColor);
+}
+.task_plate h1 .spanTwo{
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+    font-family:var(--sendom) ;
+    margin-top: 20px0;
+    font-style: italic ;
+}
+.taskCount{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border:2px solid var(--basicColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addTodo{
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+}
+.todoInput{
+    width: 430px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: #34495E;
+    border-radius: 5px;
+    font-size:  20px;
+    font-weight: 500;
+    font-family: var(--ibm);
+    color: white;
+    padding: 0 20px ;
+}
+.addButton{
+    width: 40px;
+    height: 50px;
+    background: var(--basicColor);
+    font-size: 25px;
+    border-radius: 4px;
+}
+.addButton:active{
+    transform: scale(1.1);
+}
+.singel_list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 500px;
+    padding: 20px 10px;
+    border: 2px solid #B3B6B7;
+}
+.done{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 4px solid var(--basicColor) ;
+}
+.todoListInput{
+    width: 350px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #fff;
+    background: transparent;
+    outline: 0;
+    border: none;
+}
+.listIcon{
+    font-size: 30px;
+    color: #B3B6B7;
+}
+.listIcon:active{
+    transform: scale(1.1);
+}
+.eiditIcon:hover{
+    color: rgb(0, 187, 0);
+}
+.deleteIcon:hover{
+    color: rgb(243, 0, 0);
+}
